@@ -111,3 +111,21 @@ function handleTweets(tweets) {
         element.innerHTML = html;
     }
 }
+//Отправка сообщения с сайта
+     function send_message(){
+        var a = $("#auto_form").serialize();
+        $.ajax({
+            type: "POST",
+            url: 'message.php',
+            data: a,
+            success: function(data) {
+                $("#form_data").slideUp(100);
+                $("#ajax_result").html(data);
+            }
+        });
+        return false;
+    }   
+    $('#auto_form').submit(function( event ) {
+        send_message();
+        return false;
+    });

@@ -121,103 +121,81 @@
         </div>
       </div>
     </section>
-    <!-- <section id="work" class="page">
+    <section id="work" class="page">
       <div class="container">
         <div class="content text-center">
           <div class="heading">
-            <h2>This is how we do it.</h2>
+            <h2>Оставьте заявку на выкуп вашего авто</h2>
             <div class="border"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, alias enim placeat earum quos ab.</p>
+            <p>Опишите ваш авто и мы вам перезвоним в ближайшее время</p>
           </div>
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-offset-3 col-md-6">
               <div id="portfolio">
-                <ul class="filters list-inline">
-                  <li>
-                    <a class="active" data-filter="*" href="#">All</a>
-                  </li>
-                  <li>
-                    <a data-filter=".photography" href="#">Photography</a>
-                  </li>
-                  <li>
-                    <a data-filter=".branding" href="#">Branding</a>
-                  </li>
-                  <li>
-                    <a data-filter=".web" href="#">Web</a>
-                  </li>
-                </ul>
-                <ul class="items list-unstyled clearfix animated hiding" data-animation="fadeInRight">
-                  <li class="item branding">
-                    <a href="work.html" data-gall="gall-frame" data-type="ajax">
-                      <img src="assets/img/work/1.jpg" alt="">
-                      <div class="overlay">
-                        <span>Etiam porta</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="item photography">
-                    <a href="work.html" data-gall="gall-frame" data-type="ajax">
-                      <img src="assets/img/work/2.jpg" alt="">
-                      <div class="overlay">
-                        <span>Lorem ipsum</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="item branding">
-                    <a href="work.html" data-gall="gall-frame" data-type="ajax">
-                      <img src="assets/img/work/3.jpg" alt="">
-                      <div class="overlay">
-                        <span>Vivamus quis</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="item photography">
-                    <a href="work.html" data-gall="gall-frame" data-type="ajax">
-                      <img src="assets/img/work/4.jpg" alt="">
-                      <div class="overlay">
-                        <span>Donec ac tellus</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="item photography">
-                    <a href="work.html" data-gall="gall-frame" data-type="ajax">
-                      <img src="assets/img/work/5.jpg" alt="">
-                      <div class="overlay">
-                        <span>Etiam volutpat</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="item web">
-                    <a href="work.html" data-gall="gall-frame" data-type="ajax">
-                      <img src="assets/img/work/6.jpg" alt="">
-                      <div class="overlay">
-                        <span>Donec congue </span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="item photography">
-                    <a href="work.html" data-gall="gall-frame" data-type="ajax">
-                      <img src="assets/img/work/7.jpg" alt="">
-                      <div class="overlay">
-                        <span>Nullam a ullamcorper diam</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="item web">
-                    <a href="work.html" data-gall="gall-frame" data-type="ajax">
-                      <img src="assets/img/work/8.jpg" alt="">
-                      <div class="overlay">
-                        <span>Etiam consequat</span>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
+              	<div id="form_data">
+					<form class="form-horizontal" id="auto_form" action="message.php" role="form">
+					  	<div class="form-group">
+					    	<label for="name" class="col-sm-4 control-label">Ваше имя</label>
+					    	<div class="col-sm-8">
+					      		<input type="text" class="form-control" name="name" id="name" placeholder="Ваше имя">
+					    	</div>
+					  	</div>
+					  	<div class="form-group">
+					    	<label for="auto_mark" class="col-sm-4 control-label">Марка авто</label>
+					    	<div class="col-sm-8">
+					      		<input type="text" class="form-control" name="auto_mark" id="auto_mark" placeholder="Марка автомобиля">
+					    	</div>
+					  	</div>	
+					  	<div class="form-group">
+					    	<label for="auto_model" class="col-sm-4 control-label">Модель авто</label>
+					    	<div class="col-sm-8">
+					      		<input type="text" class="form-control" name="auto_model" id="auto_model" placeholder="Модель автомобиля">
+					    	</div>
+					  	</div>
+					  	<div class="form-group">
+					    	<label for="auto_year" class="col-sm-4 control-label">Год выпуска</label>
+					    	<div class="col-sm-8">
+					      		<input type="number" class="form-control" name="auto_year" id="auto_year" placeholder="Год выпуска">
+					    	</div>
+					  	</div>
+					  	<div class="form-group">
+					    	<label for="auto_info" class="col-sm-4 control-label">Описание авто</label>
+					    	<div class="col-sm-8">
+					      		<input type="text" class="form-control" name="auto_info" id="auto_info" placeholder="Описание авто">
+					    	</div>
+					  	</div>
+					  	<div class="form-group">
+					    	<label for="auto_price" class="col-sm-4 control-label">Желаемая цена</label>
+					    	<div class="col-sm-8">
+					      		<input type="text" class="form-control" name="auto_price" id="auto_price" placeholder="Желаемая цена">
+					    	</div>
+					  	</div>
+					  	<div class="form-group">
+					    	<label for="phone" class="col-sm-4 control-label">Номер телефона</label>
+					    	<div class="col-sm-8">
+					      		<input type="text" class="form-control" name="phone" id="phone" placeholder="Ваш телефон">
+					    	</div>
+					  	</div>				  					  					
+					  	<div class="form-group">
+					    	<label for="email" class="col-sm-4 control-label">Ваш email</label>
+					    	<div class="col-sm-8">
+					      		<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+					    	</div>
+					  	</div>
+					  	<div class="form-group">
+					    	<div class="col-sm-offset-2 col-sm-10">
+					      		<button type="submit" class="btn btn-default">Отправить заявку</button>
+					    	</div>
+					  	</div>
+					</form>
+				</div>
+				<div id="ajax_result"></div>	
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <section id="clients" class="page">
       <div class="container">
         <div class="content text-center">
