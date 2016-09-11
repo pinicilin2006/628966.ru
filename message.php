@@ -10,10 +10,6 @@ if(!$email && !$phone){
 	echo 'Укажите номер телефона или email';
 	exit();
 }
-if(!$message){
-	echo 'Отсутствует текст сообщения';
-	exit();
-}
 $to      = 'v628966@yandex.ru';
 $subject = 'Заявка на выкуп авто';
 $message = 'Заявка на выкуп автомобиля с сайта: Имя:'.$name.'. Номер телефон:'.($phone ? $phone : '').'. Email:'.($email ? $email : '').'. Марка автомобиля:'.$auto_mark.'. Модель автомобиля:'.$auto_model.'. Год выпуска:'.$auto_year.'. Описание авто:'.($auto_info ? $auto_info : '').'. Желаемая цена:'.($auto_price ? $auto_price : '').'.';
