@@ -119,7 +119,7 @@ function handleTweets(tweets) {
             url: 'message.php',
             data: a,
             success: function(data) {
-                $("#form_data").slideUp(100);
+                $("#form_data").slideUp(500);
                 $("#ajax_result").html(data);
             }
         });
